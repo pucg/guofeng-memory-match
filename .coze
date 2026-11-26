@@ -1,0 +1,16 @@
+[project]
+requires = ["nodejs-24"]
+project_type = "game"
+game_type = "phaser"
+project_id = "7711652212878966819"
+app_id = "7711668061232726056"
+project_name = "国风记忆翻牌"
+
+[dev]
+build = ["bash", "./scripts/prepare.sh"]
+run = ["bash", "./scripts/dev.sh"]
+validate = ["bash", "./scripts/validate.sh"]
+
+[deploy]
+build = ["bash", "./scripts/build.sh"]
+run = ["bash", "./scripts/start.sh"]
